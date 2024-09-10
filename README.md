@@ -42,6 +42,18 @@ The goal of this project is to clone the Pype AI landing page using **Next.js** 
 - **Cloudinary**: Used Cloudinary for image storage, allowing efficient media management and optimization.
 - **API Routes**: Implemented Next.js API routes to fetch dynamic content from Strapi.
 
+  ## Example Pictures
+  ![image](https://github.com/user-attachments/assets/243ed3c6-e076-4875-864d-1699d68a3986)
+
+  ![image](https://github.com/user-attachments/assets/b695af13-e827-4715-9dda-e8c1d1cee893)
+
+  ![image](https://github.com/user-attachments/assets/eec002bc-2562-43b4-8aeb-3b7141f6eb0b)
+
+  ![image](https://github.com/user-attachments/assets/2915da44-42f1-4824-8f4c-34d0f0174630)
+
+
+
+
 ## Setup Instructions
 1. **Clone the repository**:
    ```bash
