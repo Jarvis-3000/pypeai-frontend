@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Team collaboration",
+    "description": "Collaborate on a Notion-like interface to define your LLM app requirements. Attach docs, data, and examples to ensure your prompts achieve high precision results.",
+    "icon": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950981/collaboration_8e7ced0a81.svg",
+    "displayImage": ""
+  },
+  {
+    "id": 2,
+    "title": "Effortless deployment",
+    "description": "Integrate Pype SDK in 4 lines of code.",
+    "icon": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950443/magic_6362243f93.svg",
+    "displayImage": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950561/code_snippet_80b60c5485.webp"
+  },
+  {
+    "id": 3,
+    "title": "Monitor deployed prompts",
+    "description": "Robust observability tools provide real-time metrics— cost, latency, requests, accuracy and 10+ metrics.",
+    "icon": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950443/add_square_8c81cbb4e1.svg",
+    "displayImage": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950561/analytics_2610e94729.webp"
+  },
+  {
+    "id": 4,
+    "title": "Accelerated prompt development",
+    "description": "Autogenerate your prompts and test examples. Compare selected prompts across models, parameters and prompt techniques.",
+    "icon": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950419/television_c027f4a2cb.svg",
+    "displayImage": ""
+  },
+  {
+    "id": 5,
+    "title": "Evaluate and Auto Optimize prompts",
+    "description": "Evaluate and pick the best performing prompt. Auto-Tune prompts to improve accuracy and consistency of the results.",
+    "icon": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950443/bar_d9751097d3.svg",
+    "displayImage": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950561/graph_0ac4ea9f10.webp"
+  },
+  {
+    "id": 6,
+    "title": "No expertise required",
+    "description": "No need to learn 50+ prompting techniques to improve prompts.",
+    "icon": "https://res.cloudinary.com/dy6xgrzna/image/upload/v1725950443/rings_bb56870952.svg",
+    "displayImage": ""
+  }
+]
