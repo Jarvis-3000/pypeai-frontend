@@ -42,7 +42,7 @@ const Header = () => {
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="max-w-[1800px] mx-auto relative bg-white dark:bg-slate-500  flex items-center justify-between gap-[20px] h-[70px] px-[96px]">
+        <div className="max-w-[1800px] mx-auto relative bg-white dark:bg-slate-500  flex items-center justify-between gap-[20px] h-[70px] px-[20px] sm:px-[50px] lg:px-[96px]">
           {/* Left side */}
           <div className="flex-1 flex items-center justify-between xl:justify-start gap-x-3">
             <Image src="/logo.png" height={50} width={100} alt="logo" />
@@ -54,9 +54,15 @@ const Header = () => {
               <Link href="#features">
                 <button className="font-semibold">Features</button>
               </Link>
-              <button className="bg-slate-800 dark:bg-slate-50 text-slate-50 font-semibold dark:text-slate-800 py-2 px-4 rounded-lg">
-                Launch App
-              </button>
+              <a
+                href="https://app.pypeai.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-slate-800 dark:bg-slate-50 text-slate-50 font-semibold dark:text-slate-800 py-2 px-4 rounded-lg">
+                  Launch App
+                </button>
+              </a>
             </div>
             <ModeToggle />
           </div>

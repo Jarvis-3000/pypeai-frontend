@@ -14,8 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider>
+      <body >
+        <ThemeProvider >
           <div className="max-w-[1800px] mx-auto">{children}</div>
         </ThemeProvider>
       </body>

@@ -1,8 +1,11 @@
+import { ArrowRight } from "lucide-react";
+import { AnchorButton } from "./AnchorButton";
+
 const Overview = () => {
   return (
     <div className="flex flex-col items-center py-[50px]">
       {/* Overview heading and description */}
-      <div className="w-[80%] max-w-[600px] text-center mb-10">
+      <div className="w-[90%] max-w-[600px] text-center mb-10">
         <h1 className="text-3xl lg:text-5xl font-semibold lg:font-bold mb-10">
           Build, Evaluate and Improve Prompts
           <br />
@@ -19,7 +22,7 @@ const Overview = () => {
       </div>
 
       {/* youtube video */}
-      <div className="relative border-2 border-gray-400 dark:border-slate-500 w-[80%] max-w-[700px] aspect-[100/55] rounded-lg overflow-hidden cursor-pointer mb-[50px]">
+      <div className="relative border-2 border-gray-400 dark:border-slate-500 w-[90%] max-w-[700px] aspect-[100/55] rounded-lg overflow-hidden cursor-pointer mb-[50px]">
         {/* Preconnect to improve loading performance */}
         <link rel="preconnect" href="https://www.youtube.com" />
         <link rel="preconnect" href="https://www.google.com" />
@@ -34,12 +37,20 @@ const Overview = () => {
 
       {/* CTA Buttons */}
       <div className="flex items-center justify-center gap-3 text-sm">
-        <button className="bg-slate-800 font-semibold text-slate-50 dark:bg-slate-50 dark:text-slate-800 py-2 px-[20px] sm:px-[30px] lg:px-[50px] rounded-lg">
-          Launch App
-        </button>
-        <button className="bg-blue-500 font-semibold text-white dark:bg-blue-400 py-2 px-[20px] sm:px-[30px] lg:px-[50px] rounded-lg">
-          Book a demo {`-{>}`}
-        </button>
+        <AnchorButton
+          href="https://app.pypeai.com/"
+        >
+          <button className="bg-slate-800 font-semibold text-slate-50 dark:bg-slate-50 dark:text-slate-800 py-2 px-[20px] sm:px-[30px] lg:px-[50px] rounded-lg">
+            Launch App
+          </button>
+        </AnchorButton>
+        <AnchorButton
+          href="https://calendar.app.google/YLUDu9bnYRGn5B9x8"
+        >
+          <button className="flex items-center gap-2 bg-blue-500 font-semibold text-white dark:bg-blue-400 py-2 px-[20px] sm:px-[30px] lg:px-[50px] rounded-lg">
+            Book a demo <ArrowRight />
+          </button>
+        </AnchorButton>
       </div>
     </div>
   );
