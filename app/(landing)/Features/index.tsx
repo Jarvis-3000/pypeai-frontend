@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { FeatureCard, FeatureProps } from "./FeatureCard";
+import { FeatureCard, FeatureProps } from "../../_components/FeatureCard";
 
 export const Features = async ({ features }: { features: FeatureProps[] }) => {
   return (
-    <div id="features" className="py-[20px] px-[20px] lg:px-[50px] mt-[100px]">
+    <div id="features" className="py-[20px] px-[20px] lg:px-[50px] mt-[50px] md:mt-[100px]">
       <div className="flex justify-center mb-10">
         <button className="py-2 px-6 flex items-center gap-3 shadow-custom-inset rounded-full border bg-white text-slate-800 ">
           <Image

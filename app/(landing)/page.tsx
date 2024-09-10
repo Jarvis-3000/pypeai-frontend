@@ -1,26 +1,28 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Header from "./Header";
 import Overview from "./Overview";
 import { Brands } from "./Brands";
 import { Features } from "./Features";
-import { Footer } from "./Footer";
 import FeatureJson from "../../resources/features.json";
 import BrandsJson from "../../resources/brands.json";
 
 const getFeaturesData = async () => {
   try {
     // Fetch data from your backend API
-    let res: any = await fetch(process.env.STRAPI_API + "/features");
+    let res: any = await fetch(
+      process.env.NEXT_PUBLIC_STRAPI_API + "/features"
+    );
     res = await res.json();
     res = res?.data;
 
     const features = res?.map((entry: any) => {
+      const id = entry?.id;
       const title = entry?.attributes?.title;
       const description = entry?.attributes?.description;
       const icon = entry?.attributes?.icon || "";
       const displayImage = entry?.attributes?.displayImage || "";
 
       return {
+        id,
         title,
         description,
         icon,
@@ -38,7 +40,9 @@ const getFeaturesData = async () => {
 const getUserCompaniesData = async () => {
   try {
     // Fetch data from your backend API
-    let res: any = await fetch(process.env.STRAPI_API + "/user-companies");
+    let res: any = await fetch(
+      process.env.NEXT_PUBLIC_STRAPI_API + "/user-companies"
+    );
     res = await res.json();
     res = res?.data;
 
@@ -64,12 +68,10 @@ export default async function Home() {
   const brands = await getUserCompaniesData();
 
   return (
-    <div className="mx-auto pt-[80px] relative bg-slate-50 text-slate-800 dark:bg-slate-700 dark:text-slate-50 overflow-y-auto">
-      <Header />
+    <div className="mx-auto pb-10 bg-slate-50 dark:bg-slate-700 pt-[80px] relative overflow-y-auto">
       <Overview />
       <Brands brands={brands} />
       <Features features={features} />
-      <Footer />
     </div>
   );
 }

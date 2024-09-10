@@ -1,13 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ModeToggle } from "./ModeToggler";
+import { ModeToggle } from "./_components/ModeToggler";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const path = usePathname();
 
   const controlHeader = () => {
     if (typeof window !== "undefined") {
@@ -45,15 +47,19 @@ const Header = () => {
         <div className="max-w-[1800px] mx-auto relative bg-white dark:bg-slate-500  flex items-center justify-between gap-[20px] h-[70px] px-[20px] sm:px-[50px] lg:px-[96px]">
           {/* Left side */}
           <div className="flex-1 flex items-center justify-between xl:justify-start gap-x-3">
-            <Image src="/logo.png" height={50} width={100} alt="logo" />
+            <Link href="/">
+              <Image src="/logo.png" height={50} width={100} alt="logo" />
+            </Link>
             <h1 className="text-xl font-semibold ">Pype AI</h1>
           </div>
           {/* Right side */}
           <div className="flex items-center justify-end gap-5">
             <div className="hidden xl:flex-1 xl:flex items-center justify-end gap-x-5">
-              <Link href="#features">
-                <button className="font-semibold">Features</button>
-              </Link>
+              {path === "/" && (
+                <Link href="#features">
+                  <button className="font-semibold">Features</button>
+                </Link>
+              )}
               <a
                 href="https://app.pypeai.com/"
                 target="_blank"

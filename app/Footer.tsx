@@ -1,9 +1,9 @@
 import { Linkedin } from "lucide-react";
-import { AnchorButton } from "./AnchorButton";
+import { AnchorButton } from "./_components/AnchorButton";
 
 export const Footer = () => {
   return (
-    <div className="w-full mt-[100px] bg-slate-200 dark:bg-slate-800 flex justify-between gap-[20px] sm:gap-[50px] py-[30px] px-[20px] sm:px-[50px] lg:px-[100px] xl:px-[200px]">
+    <div className="w-full  bg-slate-200 dark:bg-slate-800 flex justify-between gap-[20px] sm:gap-[50px] py-[30px] px-[20px] sm:px-[50px] lg:px-[100px] xl:px-[200px]">
       <h3 className="text-sm ">
         © Singularity Corp Pvt. Ltd. 2024. All rights reserved. Privacy Policy.
       </h3>

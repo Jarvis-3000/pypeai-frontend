@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ThemeProvider from "@/providers/ThemeProvider";
+import Header from "./Header";
+import { Footer } from "./Footer";
 
 export const metadata: Metadata = {
   title: "Pype AI",
@@ -14,9 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body >
-        <ThemeProvider >
-          <div className="max-w-[1800px] mx-auto">{children}</div>
+      <body>
+        <ThemeProvider>
+          <div className="flex flex-col max-w-[1800px] h-screen mx-auto text-slate-800 bg-slate-50 dark:bg-slate-700 dark:text-slate-50">
+            <Header />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { AnchorButton } from "./AnchorButton";
+import { AnchorButton } from "../_components/AnchorButton";
 
 const Overview = () => {
   return (
