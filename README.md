@@ -2,7 +2,7 @@
 This repository contains a clone of the [Pype AI landing page](https://www.pypeai.com) built with **Next.js** (App Router) and integrated with **Strapi Headless CMS**. The project is designed to demonstrate responsive design, server-side rendering (SSR) for SEO optimization, and dynamic content rendering with a focus on performance and modern development practices.
 
 ## Demo
-- **Deployed Application**: [Deployed URL](https://pypeai-frontend.vercel.app)
+- **Deployed Application**: [Deployed URL](https://pype-ai-frontend.vercel.app)
 - **GitHub Repository**: [Repository URL](https://github.com/Jarvis-3000/pypeai-frontend)
 
 ## Table of Contents
