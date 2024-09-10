@@ -1,3 +1,55 @@
+# Pype AI Landing Page Clone
+This repository contains a clone of the [Pype AI landing page](https://www.pypeai.com) built with **Next.js** (App Router) and integrated with **Strapi Headless CMS**. The project is designed to demonstrate responsive design, server-side rendering (SSR) for SEO optimization, and dynamic content rendering with a focus on performance and modern development practices.
+
+## Demo
+- **Deployed Application**: [Deployed URL](https://pypeai-frontend.vercel.app)
+- **GitHub Repository**: [Repository URL](https://github.com/your-username/pype-ai-landing-page)
+
+## Table of Contents
+- [Objective](#objective)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [CMS Integration](#cms-integration)
+- [Setup Instructions](#setup-instructions)
+- [Dynamic Routes](#dynamic-routes)
+- [Performance Optimization](#performance-optimization)
+
+## Objective
+The goal of this project is to clone the Pype AI landing page using **Next.js** with the **App Router**, integrating with a headless CMS (Strapi), and ensuring:
+- Responsive design
+- Performance optimization
+- Dynamic routes
+- Light/Dark theme toggle
+- CMS-driven content rendering
+
+## Tech Stack
+- **Next.js 14** (with App Router)
+- **Tailwind CSS** for styling
+- **Strapi** as the Headless CMS (hosted on Render)
+- **Cloudinary** for image and icon management
+- **PostgreSQL** database for CMS data
+- **Vercel** for deployment
+
+## Features
+- **Dark/Light Theme**: A theme toggle is implemented, allowing users to switch between dark and light modes.
+- **Dynamic Routes**: Feature details are accessible via dynamic routes (e.g., `/feature/[id]`).
+- **SSR for SEO**: The app leverages SSR to fetch and render data from Strapi, ensuring optimal SEO performance.
+- **Responsive Design**: The landing page is fully responsive, optimized for desktop and mobile screens.
+- **CMS-Driven Content**: Content such as features and company data is stored in Strapi and fetched dynamically using API routes.
+
+## CMS Integration
+- **Strapi Headless CMS**: Integrated Strapi to manage landing page data (features, images, etc.).
+- **Cloudinary**: Used Cloudinary for image storage, allowing efficient media management and optimization.
+- **API Routes**: Implemented Next.js API routes to fetch dynamic content from Strapi.
+
+## Setup Instructions
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/pype-ai-landing-page.git
+   cd pype-ai-landing-page
+   ```
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
