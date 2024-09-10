@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Header from "./Header";
 import Overview from "./Overview";
 import { Brands } from "./Brands";
@@ -9,11 +10,11 @@ import BrandsJson from "../../resources/brands.json";
 const getFeaturesData = async () => {
   try {
     // Fetch data from your backend API
-    let res = await fetch(process.env.STRAPI_API + "/features");
+    let res: any = await fetch(process.env.STRAPI_API + "/features");
     res = await res.json();
     res = res?.data;
 
-    const features = res?.map((entry) => {
+    const features = res?.map((entry: any) => {
       const title = entry?.attributes?.title;
       const description = entry?.attributes?.description;
       const icon = entry?.attributes?.icon || "";
@@ -37,11 +38,11 @@ const getFeaturesData = async () => {
 const getUserCompaniesData = async () => {
   try {
     // Fetch data from your backend API
-    let res = await fetch(process.env.STRAPI_API + "/user-companies");
+    let res: any = await fetch(process.env.STRAPI_API + "/user-companies");
     res = await res.json();
     res = res?.data;
 
-    const userCompanies = res?.map((entry) => {
+    const userCompanies = res?.map((entry: any) => {
       const name = entry?.attributes?.name || "";
       const image = entry?.attributes?.image || "";
 
