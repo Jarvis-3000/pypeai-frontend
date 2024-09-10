@@ -3,7 +3,7 @@ This repository contains a clone of the [Pype AI landing page](https://www.pypea
 
 ## Demo
 - **Deployed Application**: [Deployed URL](https://pypeai-frontend.vercel.app)
-- **GitHub Repository**: [Repository URL](https://github.com/your-username/pype-ai-landing-page)
+- **GitHub Repository**: [Repository URL](https://github.com/Jarvis-3000/pypeai-frontend)
 
 ## Table of Contents
 - [Objective](#objective)
