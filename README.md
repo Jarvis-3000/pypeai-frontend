@@ -45,11 +45,16 @@ The goal of this project is to clone the Pype AI landing page using **Next.js** 
   ## Example Pictures
   ![image](https://github.com/user-attachments/assets/243ed3c6-e076-4875-864d-1699d68a3986)
 
+  ![image](https://github.com/user-attachments/assets/bad158e9-797f-409c-bf46-6f0258bd82be)
+
+
   ![image](https://github.com/user-attachments/assets/b695af13-e827-4715-9dda-e8c1d1cee893)
 
   ![image](https://github.com/user-attachments/assets/eec002bc-2562-43b4-8aeb-3b7141f6eb0b)
 
   ![image](https://github.com/user-attachments/assets/2915da44-42f1-4824-8f4c-34d0f0174630)
+
+  ![image](https://github.com/user-attachments/assets/c8c52153-7d9c-4a58-aa26-054bac98c9be)
 
 
 
